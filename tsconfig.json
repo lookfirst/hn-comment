@@ -6,6 +6,7 @@
 	"experimentalDecorators": true,
 	"isolatedModules": true,
 	"types": ["chrome"],
-	"lib": ["DOM", "DOM.Iterable", "ESNext"]
+	"lib": ["DOM", "DOM.Iterable", "ESNext"],
+	"moduleResolution": "Node"
   }
 }

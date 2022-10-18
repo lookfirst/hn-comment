@@ -12,3 +12,4 @@ export default new OptionsSync({
 	],
 	logging: true,
 });
+

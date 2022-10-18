@@ -5,7 +5,7 @@ console.log('💈 Content script loaded for', chrome.runtime.getManifest().name)
 async function init() {
 	const options = await optionsStorage.getAll();
 	const color = 'rgb(' + options.colorRed + ', ' + options.colorGreen + ',' + options.colorBlue + ')';
-	const text = options.text;
+	const {text} = options;
 	const notice = document.createElement('div');
 	notice.innerHTML = text;
 	document.body.prepend(notice);
@@ -14,6 +14,6 @@ async function init() {
 	notice.style.color = color;
 }
 
-init().catch((e) => {
+init().catch(e => {
 	console.log(e);
 });
