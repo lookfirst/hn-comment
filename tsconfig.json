@@ -1,0 +1,11 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+	"target": "ESNext",
+	"strict": true,
+	"experimentalDecorators": true,
+	"isolatedModules": true,
+	"types": ["chrome"],
+	"lib": ["DOM", "DOM.Iterable", "ESNext"]
+  }
+}

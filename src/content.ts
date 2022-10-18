@@ -1,6 +1,7 @@
-import optionsStorage from './options-storage.js';
+import optionsStorage from './options-storage';
 
 console.log('💈 Content script loaded for', chrome.runtime.getManifest().name);
+
 async function init() {
 	const options = await optionsStorage.getAll();
 	const color = 'rgb(' + options.colorRed + ', ' + options.colorGreen + ',' + options.colorBlue + ')';
@@ -13,4 +14,6 @@ async function init() {
 	notice.style.color = color;
 }
 
-init();
+init().catch((e) => {
+	console.log(e);
+});
