@@ -16,7 +16,7 @@ function updateOutputColor() {
 function updateInputField(event: Event) {
 	if (event.currentTarget) {
 		const current = event.currentTarget as HTMLInputElement;
-		(numberInputs[rangeInputs.indexOf(current)] as HTMLInputElement).value = (current).value;
+		(numberInputs[rangeInputs.indexOf(current)]).value = (current).value;
 	}
 }
 
@@ -30,6 +30,6 @@ async function init() {
 	updateOutputColor();
 }
 
-init().catch((e) => {
+init().catch(e => {
 	console.log(e);
 });
