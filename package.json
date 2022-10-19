@@ -32,6 +32,9 @@
 			"webextensions": true
 		}
 	},
+	"prettier": {
+		"bracketSpacing": true
+	},
 	"stylelint": {
 		"extends": "stylelint-config-xo"
 	},

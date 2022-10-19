@@ -1,4 +1,4 @@
-import optionsStorage from './options-storage';
+import {optionsStorage} from './options-storage';
 
 console.log('💈 Content script loaded for', chrome.runtime.getManifest().name);
 

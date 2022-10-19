@@ -1,7 +1,7 @@
 import 'webext-base-css';
 import './options.css';
 
-import optionsStorage from './options-storage';
+import {optionsStorage} from './options-storage';
 
 const rangeInputs = [...document.querySelectorAll('input[type="range"][name^="color"]')] as HTMLInputElement[];
 const numberInputs = [...document.querySelectorAll('input[type="number"][name^="color"]')] as HTMLInputElement[];
